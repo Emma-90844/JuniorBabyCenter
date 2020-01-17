@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Junior Baby Center</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/">
+</head>
+
+<body>
+    {{> dashboardNavbar}}
+
+    <div class="">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="sidebar" >
+                    <!-- A small seach bar in the admin side navigation -->
+                    <nav class="navbar navbar-light ">
+                        <form action="" class="forsm-inline">
+                            <input type="text" class="form-control mt-5" type="search" aria-label="Search"
+                                placeholder="Search ">
+                        </form>
+
+                        <!-- A side bar navigation for the administrator -->
+                    </nav>
+                    <a href="/babysitter/dashboard"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="/babysitter/dashboard"><i class="fa fa-credit-card"></i> Upload Photo</a>
+                    <a href="/babysitter/assignments"><i class="fa fa-user-plus"></i> View Assignments</a>
+                    <a href="/babysiter/dashboard"><i class="fa fa-fw fa-child"></i> Notification</a>
+                    <a href="/babysitter/dashboard"><i class="fa fa-calendar"></i> Calender</a>
+                    <a href=""><i class="fa fa-user-plus"></i> ToDo List</a>
+                    <a href=""><i class="fa fa-fw fa-child"></i> Settings</a>
+                    <a href=""><i class="fa fa-calendar"></i>  Messages</a>
+                     <a href=""><i class="fa fa-fw fa-wrench"></i>  Services</a>
+                    <a href=""><i class="fa fa-fw fa-envelope"></i> ToDo List</a>
+                    <a href=""><i class="fa fa-calendar"></i>  My Files</a>
+                    <a href=""><i class="fa fa-fw fa-wrench"></i>  Settings</a>
+                </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="">
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+    {{> footer }}
+    <script src="/assets/js/login.js"></script>
+    <script src="/assets/js/registration.js"></script>
+    <script src="/assets/lib/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="/assets/lib/popper/popper.min.js"></script>
+    <script src="/assets/lib/fontawesome/js/all.min.js"></script>
+    <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

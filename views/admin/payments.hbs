@@ -1,0 +1,41 @@
+{{#if payments}}
+<!--Payment record table starts here -->
+<div class="container mt-5 bg-light">
+    <div class="row">
+        <table class="table mb-5">
+            <thead class="thead-dark" id="thead">
+                <tr>
+                    <th scope="col">Name of Parent</th>
+                    <th scope="col">Date of Appointment</th>
+                    <th scope="col">Number of Children</th>
+                    <th scope="col">Club</th>
+                    <th scope="col">Total Hours</th>
+                    <th scope="col">Total Amount in UGX</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each payments}}
+                <tr>
+                    <th scope="row">{{this.appointment.nameOfParent}}</th>
+                    <td>{{this.appointment.dateOfAppointment}}</td>
+                    <td>{{this.appointment.numberOfChildren}}</td>
+                    <td>{{this.appointment.club}}</td>
+                    <td>{{this.totalHours}}</td>
+                    <td>{{this.totalAmount}}</td>
+                </tr>
+                {{/each}}
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>TotalAmount </td>
+                    <td>UGX {{totalAmount}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{{else}}
+<h1>There is no payment to display!!</h1>
+{{/if}}

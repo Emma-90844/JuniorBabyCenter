@@ -1,0 +1,45 @@
+<h1 class="text-center h4 mt-5">CREATE ASSIGNMENT</h1>
+<div class="row h6">
+    <form action="/supervisor/create-assignment/{{appointment._id}}" method="POST" name="paymentForm">
+        {{!-- Name of parents --}}
+        <div class="form-group">
+            <label for="nameOfParent">Name of Parent</label>
+            <input disabled type="text" name="nameOfParent" value="{{appointment.nameOfParent}}" class="form-control">
+        </div>
+
+        {{!-- Name of children --}}
+        <div class="form-group">
+            <label for="nameOfParent">Number of Children</label>
+            <input disabled type="number" name="numberOfChildren" id="numberOfChildren"
+                value="{{appointment.numberOfChildren}}" class="form-control">
+        </div>
+
+        {{!-- Name of children --}}
+        <div class="form-group">
+            <label for="club">Club</label>
+            <input disabled type="text" name="club" id="club" value="{{appointment.club}}" class="form-control">
+        </div>
+
+        {{!-- Date of appointment --}}
+        <div class="form-group">
+            <label for="dateOfAppointment">Date of the Appointment</label>
+            <input disabled type="text" name="dateOfAppointment" value="{{appointment.dateOfAppointment}}"
+                class="form-control">
+        </div>
+
+        {{!-- Email address of the parent--}}
+        <div class="form-group">
+            <label for="email">Email of the Parent</label>
+            <input disabled type="text" value="{{appointment.email}}" class="form-control">
+        </div>
+
+        {{!-- Id of the baby sitter --}}
+        <div class="form-group">
+            <input required type="text" name="_id" id="_id" class="form-control" placeholder="Babysitter ID">
+            <span id="babysitterIdError" class="text-danger"></span>
+        </div>
+
+        <button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+</div>

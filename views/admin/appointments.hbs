@@ -1,0 +1,33 @@
+{{#if appointments}}
+<!--Appointment list record table starts here -->
+<div class="container mt-5" id="table">
+    <div class="row">
+        <table class="table mb-5">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Name of Parent</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Number of Children</th>
+                    <th scope="col">club</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Names of Children</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each appointments}}
+                <tr>
+                    <th scope="row">{{this.nameOfParent}}</th>
+                    <td>{{this.phoneNumber}}</td>
+                    <td>{{this.email}}</td>
+                    <td>{{this.numberOfChildren}}</td>
+                    <td>{{this.club}}</td>
+                    <td>{{this.dateOfAppointment}}</td>
+                    <td>{{this.namesOfChildren}}</td>
+                </tr>
+                {{/each}}
+        </table>
+    </div>
+    {{else}}
+    <h1>There is no appointment to display!!</h1>
+    {{/if}}

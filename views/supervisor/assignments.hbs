@@ -1,0 +1,33 @@
+{{#if assignments}}
+<!--Payment record table starts here -->
+<div class="container mt-5 bg-light">
+    <div class="row">
+        <table class="table mb-5">
+            <thead class="thead-dark" id="thead">
+                <tr>
+                    <th scope="col">Name of Parent</th>
+                    <th scope="col">Date of Appointment</th>
+                    <th scope="col">Number of Children</th>
+                    <th scope="col">Club</th>
+                    <th scope="col">Babysitter ID</th>
+                    <th scope="col">Name of the Babysitter</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each assignments}}
+                <tr>
+                    <th scope="row">{{this.appointment.nameOfParent}}</th>
+                    <td>{{this.appointment.dateOfAppointment}}</td>
+                    <td>{{this.appointment.numberOfChildren}}</td>
+                    <td>{{this.appointment.club}}</td>
+                    <td>{{this.babysitter._id}}</td>
+                    <td>{{this.babysitter.firstName}} {{this.babysitter.lastName}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+{{else}}
+<h1>There is no assignment to display!!</h1>
+{{/if}}

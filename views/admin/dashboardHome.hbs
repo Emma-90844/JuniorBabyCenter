@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <h1>Welcome {{user.firstName}} {{user.lastName}}</h1>
+    <p>
+        <h1>Administration Dashboard</h1>
+    </p>
+
+    {{!-- Display information about the created employee --}}
+    {{#if createdEmployee}}
+    <div class="text-info h4">
+        You have created a new employee {{createdEmployee.firstName}} {{createdEmployee.lastName}} with a password of
+        {{password}}
+    </div>
+    {{/if}}
+</div>

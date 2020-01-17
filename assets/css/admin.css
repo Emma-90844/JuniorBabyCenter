@@ -1,0 +1,67 @@
+/* body css */
+body {
+  background-color: rgb(198, 209, 211);
+  /*
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* padding-top: 100px; */
+  /* opacity: inherit; */
+}
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+  /* height: 100%; */
+  width: 270px;
+  /* position: fixed; */
+  /* z-index: 1; */
+  /* top: 0; */
+  /* left: 0; */
+  background-color: rgb(21, 32, 36);
+  
+  /* background-color: rgb(197, 133, 14); */
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 10px 20px 20px 56px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  align-items: center;
+}
+.notification a {
+  /* padding: 10px 20px 20px 56px; */
+  text-decoration: none;
+  font-size: 20px;
+  color: #01070f;
+  display: block;
+  align-items: center;
+}
+.notification a:hover {
+  color: white;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}

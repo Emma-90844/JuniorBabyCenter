@@ -1,0 +1,21 @@
+<h1>Welcome {{user.firstName}} {{user.lastName}} to the Supervisor's Dashboard</h1>
+{{#if appointment}}
+You have successfully created an appointment!!
+{{/if}}
+
+
+{{#if payment}}
+You have successfully created a payment!!
+{{/if}}
+
+{{#if assignment}}
+You have successfully created an assignment!!
+{{/if}}
+
+
+{{#if errorMessage}}
+An errror has occurred
+<div class="text-danger">
+{{errorMessage}}
+</div>
+{{/if}}

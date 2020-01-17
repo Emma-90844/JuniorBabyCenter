@@ -1,0 +1,125 @@
+<!-- appointment  form starts here-->
+<h5 style=" text-decoration: underline;" class="mt-4">CREATE EMPLOYEE</h2>
+    <form onsubmit="return validateCreateEmployee()" action="/admin/create-employee" method="POST" id="addEmployee"
+        class="form-group" style="width:900px;border: 1px solid rgb(192, 182, 182); font-size: 20px;; color: rgb(219, 202, 202);
+     background-color:  #263638; border-radius:7px ;">
+        <!-- First name and phone number row-->
+
+        <div class="col-md-12 mt-4">
+            <div class="row ">
+                <div class="col-md-1 "></div>
+
+                <!-- First name input field-->
+                <div class="col-md-5">
+                    <input type="text" name="firstName" class="form-control" placeholder="First name" id="first_name">
+                    <div style="color: red;" id="firstname_error"></div>
+                </div>
+                <!--Phone number input field-->
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Phone Number" name="phoneNumber"
+                        id="phone_number">
+                    <div style="color: red;" id="phonenumber_error"></div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        {{!-- last name and next of kin --}}
+        <div class="col-md-12 mt-4">
+            <div class="row">
+                <!-- Last name input field-->
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <input type="text" name="lastName" id="last_name" placeholder="Last Name" class="form-control ">
+                    <div style="color: red;" id="lastname_error"></div>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" id="kin" class="form-control" placeholder="Name of next of kin" name="nextOfKin"
+                        id="kin">
+                    <div style="color: red;" id="kin_error"></div>
+                </div>
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+
+
+        <!-- drop down for number of kids  -->
+        <div class="col-md-12 mt-4">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <!--Input field for the parents email address-->
+                <div class="col-md-5">
+                    <input type="text" name="email" placeholder="Email address" id="email" class="form-control">
+                    <div style="color: red;" id="email_error"></div>
+                </div>
+                <!-- Input filed for the   -->
+                <div class="col-md-5">
+                    <input type="text" name="nexOfKinPhoneNumber" placeholder="Next of kin phone number"
+                        id="kin_contact" class="form-control">
+                    <div style="color: red;" id="kinnumber_error"></div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+
+        {{!-- user id and date of appointment --}}
+        <div class="col-md-12 mt-4">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <!-- Input field for user id -->
+                <div class="col-md-5">
+                    <input type="text" name="residenceAddress" id="userid" placeholder="Residence Address"
+                        class="form-control">
+                    <div style="color: red;" id="userid_error"></div>
+                </div>
+                <!-- Date of appointment-->
+                <div class="col-md-5" style="width: 200px;">
+                    <input type="date" placeholder="Date of appointment" name="dateOfAppointment" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <!-- choose role selector-->
+        <div class="row mt-1">
+            <div class="col-md-1"></div>
+
+            <!-- A droplist for  club to be chosen -->
+            <div class="col-md-5 mt-4 ">
+                <select name="role" class="form-control" id="select">
+                    <option value="supervisor">Supervisor</option>
+                    <option selected value="babysitter">Antie</option>
+                </select>
+                <div id="select_error" style="color: red;"></div>
+                <div class="col-md-  mt-2 ">
+                    <input type="radio" name="gender" value="male">Male &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" checked name="gender" value="female">Female
+                </div>
+
+
+                <div class="row">
+                    <!--  Submit appointment form button-->
+                    <div class="col-md-6" style="margin-top: 30px;">
+                        <input type="submit" class="form-control btn-dark" value="Submit" />
+                    </div>
+
+                    <div class="col-md-6 mb-3" style="margin-top: 30px;text-decoration: none">
+                        <!-- Cancel appointment button-->
+                        <a href="/admin/dashboard"> <button type="button"
+                                class="form-control btn-danger">Cancel</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Other info -->
+
+            <div class="col-md-5 mt-4">
+                <input type="text" name="password" placeholder="Password" class="form-control">
+            </div>
+        </div>
+
+
+
+    </form>

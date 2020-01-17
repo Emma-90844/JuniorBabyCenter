@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+hr{
+    color:white;
+}
+body{
+    background-image:url('/images/playcolorgirl.jpeg');
+    background-color: rgb(186, 227, 233);
+    background-size: cover;
+    /* background-attachment: fixed; */
+   font-family: new time 'Times New Roman', Times, serif'
+
+}
+p{
+    font-size: 17px;
+    color:white;
+}
+h3{
+    font-size: 25px;
+    color: white;
+    text-align: 
+}
+.glyphicon-pencil{
+    font-size: 35px;
+    color:white;
+    float: right;
+    margin-top: 20px;
+}
+.label{
+    font-weight: normal;
+    margin-top: 15px;
+    color:white;
+    font-size: 19px;
+
+
+}
+.col-md-5{
+    margin-top: 80px;
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0,0,0,0.4);
+}
+.form-control{
+    background: transparent;
+    border-radius: 0px;
+    border:0px;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin-top:15px;
+    height: 40px;
+    color:white;
+    
+}
+input[type="checkbox"]{
+    margin-top: 15px;
+    width: 115px;
+    height: 15px;
+}
+small{
+    font-size: 18px;
+    color: white;
+
+}
+input[type]{
+    margin-top: 22px;
+}
+option{
+   color: rgb(235, 225, 225); 
+}
+.btn-info{
+    margin-top:20px;
+    font-size:18px;
+    width: 120px;
+    margin-bottom: 20px;
+}
+.btn-warning{
+    margin-top:20px;
+    font-size: 18px;
+    width: 120px;
+    /* margin-left: 80px; */
+    margin-bottom: 20px;
+    color: white;
+}
+footer{
+    padding: 20px;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,23 +8,34 @@ const accountController = require('../controllers/accountController');
 router.get('/dashboard', accountController.verifyAdminRole, (req, res) =>
   adminController.dashboard(req, res)
 );
-// Display Appointment page
-router.get('/appointment', (req, res) =>
-  adminController.displayAppointmentsPage(req, res)
-);
 
 // Display create user form
-router.get('/createuser', accountController.verifyAdminRole, (req, res) =>
-  adminController.displaycreateUserPage(req, res)
+router.get('/create-employee', accountController.verifyAdminRole, (req, res) =>
+  adminController.displaycreateEmployeePage(req, res)
 );
 
 // Create a new user
-router.post('/createuser', accountController.verifyAdminRole, (req, res) =>
-  adminController.createUser(req, res)
+router.post('/create-employee', accountController.verifyAdminRole, (req, res) =>
+  adminController.createEmployee(req, res)
+);
+
+// View all the appointments
+router.get('/appointments', accountController.verifyAdminRole, (req, res) =>
+  adminController.viewAllAppointments(req, res)
+);
+
+// View all payments
+router.get('/payments', accountController.verifyAdminRole, (req, res) =>
+  adminController.viewAllPayments(req, res)
+);
+
+// View all assignments
+router.get('/assignments', accountController.verifyAdminRole, (req, res) => 
+  adminController.viewAllAssignments(req, res)
 );
 
 // Display all users
-router.post('/users', accountController.verifyAdminRole, (req, res) =>
+router.get('/users', accountController.verifyAdminRole, (req, res) =>
   adminController.displayUsersPage(req, res)
 );
 

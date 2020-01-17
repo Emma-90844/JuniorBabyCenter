@@ -1,0 +1,51 @@
+{{> navbar}}
+
+<div class="container  mt-5">
+    <h1>Register</h1>
+    <!-- registration Form-->
+    <form onsubmit="return validateRegistrationForm()" action="/account/register" method="post" id="registrationForm">
+        {{!-- First Name --}}
+        <div class="form-group">
+            <input type="text" name="firstName" placeholder="First Name" id="first_name" class="form-control">
+            <div id="firstname_error" style="color: red;"></div>
+        </div>
+
+        {{!-- Last Name --}}
+        <div class="form-group">
+            <input type="text" name="lastName" placeholder="Last Name" class="form-control" id="last_name">
+            <div id="lastname_error" style="color: red;"></div>
+        </div>
+
+
+        {{!--  Email Address--}}
+        <div class="form-group">
+            <input type="text" name="email" placeholder="Enter Email Address" class="form-control" id="email">
+            <div id="email_error" style="color: red;"></div>
+        </div>
+
+        {{!--  Phone number--}}
+        <div class="form-group">
+            <input type="tel" name="phoneNumber" placeholder="Phone Number" class="form-control" id="phoneNumber">
+            <div id="phoneNumber_error" style="color: red;"></div>
+        </div>
+
+        {{!-- Password --}}
+        <div class="form-group">
+            <input type="password" name="password" placeholder="Password" class="form-control" id="register-password">
+            <div id="registerPassword_error" style="color: red;"></div>
+        </div>
+
+        {{!-- Confirm password --}}
+        <div class="form-group">
+            <input type="password" placeholder=" Confirm Password" class="form-control" id="confirm_Registerpassword">
+            <div id="confirmPassword_error" style="color: red;"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary text-center"> Register</button>
+        <div>
+            <small>Already have an account</small>
+            <a href="/account/login">Login</a>
+        </div>
+    </form>
+
+</div>

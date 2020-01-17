@@ -1,0 +1,54 @@
+header{
+    background-color: rgb(117, 117, 105);
+    padding: 30px;
+}
+.form-group{
+    /* max-width: 500px; */
+    /* display: inline; */
+    justify-content:center; 
+    /* background: red; */
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding: 50px 40px ;
+    border: 1px solid rgb(212, 203, 203);
+    border-radius: 8px;
+    align-items: center
+}
+h3{
+text-align: center
+}
+.main-section{
+    display: flex;
+    justify-content: center;
+    padding-top:120px;
+}
+#username, #email, #password,#passwordconfirm{
+    width: 340px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+#username-error,#email-error,#password-error,#password-confirm-error{
+    color:rgb(109, 101, 101);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

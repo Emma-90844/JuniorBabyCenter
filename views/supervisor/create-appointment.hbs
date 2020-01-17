@@ -1,0 +1,126 @@
+<!-- appointment  form starts here-->
+<h5 class="text-white text-center mt-4" style=" text-decoration: underline; color: rgb(44, 90, 92);">
+    APPOINTMENT FORM</h5>
+
+<form onsubmit="return validateCreateAppointment()" action="/supervisor/create-appointment" method="POST"
+    id="form-appointment-id" class="form-group container-fluid " style=" width:900px;border: 1px solid rgb(192, 182, 182); font-size: 20px; color: rgb(219, 202, 202);
+         background-color:  #263638; border-radius:7px ;">
+    <!-- row for name -->
+    <div class="col-md-12">
+        <div class="row mt-5 ">
+            <div class="col-md-1 "></div>
+            {{!-- parents name --}}
+            <div class="col-md-5">
+                <input required minlength="4" maxlength="20" type="text" name="nameOfParent" class="form-control"
+                    placeholder="Parents Name" id="name_id" onfocus>
+                <div id="username-error" style="color:tomato;"></div>
+            </div>
+            {{!-- Name of child or children --}}
+            <div class="col-md-5">
+                <input required type="text" class="form-control" placeholder="Name of Child(dren)"
+                    name="namesOfChildren" id="child_name">
+                <div id="childname-error" style="color: red;"></div>
+            </div>
+            <div class="col-md-2"></div>
+
+        </div>
+    </div>
+
+    <!-- row for parents phone number -->
+    <div class="col-md-12 mt-4">
+        <div class="row ">
+            <div class="col-md-1"></div>
+
+            {{!-- Phone number --}}
+            <div class="col-md-5">
+                <input required type="text" name="phoneNumber" placeholder="Phone Number" id="phone_number"
+                    class="form-control ">
+                <div id="phone_error" style="color: red;"></div>
+            </div>
+            {{!-- number of children --}}
+
+            <div class="col-md-5">
+                <input required type="number" id="child-number" placeholder="Number of children" class="form-control"
+                    name="numberOfChildren">
+                <div id="child_number_error" style="color: red;"></div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <!-- drop down for number of kids  -->
+    <div class="col-md-12 mt-4">
+        <div class="row mt-3">
+            <div class="col-md-1"></div>
+
+            <!-- Nput field for email -->
+            <div class="col-md-5">
+                <input required type="text" name="email" id="email" placeholder="Email Address" class="form-control">
+                <div id="email_error" style="color: red;"></div>
+            </div>
+            <div class="col-md-5">
+                <input required type="text" name="childrenAges" id="children_age1" placeholder="Child(ren) Age "
+                    class="form-control">
+                <div id="children_error" style="color: red;"></div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+    </div>
+
+
+    {{!-- customer id --}}
+    <div class="col-md-12 mt-4">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <input required type="text" name="residenceAddress" placeholder="Residence Address" id="cutomer_id"
+                    class="form-control">
+                <div id="customer_error" style="color: red;"></div>
+            </div>
+            <!-- Date of appointment selector -->
+            <div class="col-md-5">
+                <input required type="date" name="dateOfAppointment" class="form-control w-50"
+                    placeholder="Date of appointment" id="appointment_date">
+                <div id="appointment_error" style="color: red;"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-12 mt-4">
+        <!-- choose club selector-->
+        <div class="row">
+            <div class="col-md-1"></div>
+            <!-- A droplist for  club to be chosen -->
+            <div class="col-md-5">
+                <select required name="club" class=" form-control" id="select">
+                    <option value="choose" style="display: none;">Choose Club</option>
+                    <option value="Morning Club">Morning Club</option>
+                    <option value="Afternoon Club">Afternoon Club</option>
+                    <option value="Evening Club">Evening Club</option>
+                    <option value="Night Club">Night Club</option>
+                </select>
+                <div id="select_error" style="color: red;"></div>
+
+                <div class="row">
+                    <!--  Submit appointment form button-->
+                    <div class="col-md-6 mt-4">
+                        <input type="submit" class="form-control btn-dark" value="Submit" />
+                    </div>
+
+                    <div class="col-md-6 mt-4">
+                        <!-- Cancel appointment button-->
+                        <button type="reset" class="form-control btn-danger">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Other info -->
+            <div class="col-md-4 mb-3">
+                <textarea name="otherInformation" cols="15" rows="5" class="form-control "
+                    placeholder="Any Other Information"></textarea>
+            </div>
+        </div>
+    </div>
+
+</form>

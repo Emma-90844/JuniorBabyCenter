@@ -1,0 +1,100 @@
+header{
+    background-color: rgb(54, 162, 189);
+    padding: 20px;
+    display: flex;
+   
+}
+
+footer{
+    padding: 50px;
+    background-color: rgb(133, 36, 19);
+}
+.btn{
+    padding: 4px 15px;
+}
+/* #logo-link{
+    color: white
+} */
+.form-group{
+    /* max-width: 500px; */
+    /* display: inline; */
+    justify-content:center; 
+    /* background: red; */
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding: 50px 40px ;
+    border: 1px solid rgb(212, 203, 203);
+    border-radius: 8px;
+    align-items: center;
+    /* background-color: rgb(109, 171, 224); */
+    background-image: url()
+}
+h3{
+text-align: center
+}
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    padding-top:60px;
+    /* background: url('/images/playinggirl.jpg'); */
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+     /* background-size: cover; */
+
+
+}
+form{
+    
+}
+
+
+
+#username, #email, #password,#passwordconfirm{
+    width: 340px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+#username-error,#email-error,#password-error,#password-confirm-error{
+    color:rgb(109, 101, 101);
+}
+
+body{
+    
+    background-image: url('/images/girlcolor.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(60, 168, 196)
+
+}
+
+#bg-image{
+    /* background: red; */
+      /* background: url('/images/playinggirl.jpg'); */
+      /* background-repeat: no-repeat; */
+      /* background-attachment: fixed; */
+      /* background-size: 1550px auto; */
+      /* width: 500px; */
+      /* height: 600px; */
+      /* height:auto; */
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

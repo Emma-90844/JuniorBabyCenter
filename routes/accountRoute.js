@@ -11,4 +11,14 @@ router.get('/login', (req, res) =>
 // Login a user
 router.post('/login', (req, res) => accountController.login(req, res));
 
+// Display the register page
+router.get('/register', (req, res) =>
+  accountController.displayRegistrationPage(req, res)
+);
+
+// Register a new parent
+router.post('/register', (req, res) => accountController.register(req, res));
+
+router.get('/logout', (req, res) => accountController.logout(req, res));
+
 module.exports = router;

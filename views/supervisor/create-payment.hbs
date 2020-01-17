@@ -1,0 +1,52 @@
+<h1 class="text-center h4 mt-5">CREATE PAYMENT</h1>
+<div class="row h6">
+    <form onsubmit="return validatePayment()" action="/supervisor/create-payment/{{appointment._id}}" method="POST"
+        name="paymentForm">
+        {{!-- Name of parents --}}
+        <div class="form-group">
+            <label for="nameOfParent">Name of Parent</label>
+            <input disabled type="text" name="nameOfParent" value="{{appointment.nameOfParent}}" class="form-control">
+        </div>
+
+        {{!-- Name of children --}}
+        <div class="form-group">
+            <label for="nameOfParent">Number of Children</label>
+            <input disabled type="number" name="numberOfChildren" id="numberOfChildren"
+                value="{{appointment.numberOfChildren}}" class="form-control">
+        </div>
+
+        {{!-- Name of children --}}
+        <div class="form-group">
+            <label for="club">Club</label>
+            <input disabled type="text" name="club" id="club" value="{{appointment.club}}" class="form-control">
+        </div>
+
+        {{!-- Date of appointment --}}
+        <div class="form-group">
+            <label for="dateOfAppointment">Date of the Appointment</label>
+            <input disabled type="text" name="dateOfAppointment" value="{{appointment.dateOfAppointment}}"
+                class="form-control">
+        </div>
+
+        {{!-- Email address of the parent--}}
+        <div class="form-group">
+            <label for="email">Email of the Parent</label>
+            <input disabled type="text" value="{{appointment.email}}" class="form-control">
+        </div>
+
+        {{!-- Total hours --}}
+        <div class="form-group">
+            <input type="number" name="totalHours" id="totalHours" class=" form-control" placeholder="Total Hours">
+            <span id="totalHoursError" class="text-danger"></span>
+        </div>
+
+        {{!-- Total Amount --}}
+        <div class="form-group">
+            <label for="totalAmount">Total Amount</label>
+            <input type="number" name="totalAmount" id="totalAmount" class="form-control">
+        </div>
+
+        <button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+</div>

@@ -1,0 +1,94 @@
+
+
+
+body{
+    /* background-image: url('/images/playinggirl.jpg'); */
+    /* height: auto; */
+    background-size: cover;
+    /* background-repeat:no repeat; */
+    background-position: center center;
+    /* height:00px; */
+    /* width: 100%; */
+    
+  
+    /* padding: 50px; */
+    /* font-family: Arial; */
+    /* background-repeat: none; */
+    /* background-attachment :fixed; */
+}
+
+
+header{
+    background-color: #17a2b8;
+    padding: 37px;
+    display: flex;
+   
+}
+.btn{
+    padding: 4px 15px;
+}
+.main-section{
+    background-image: url('');
+    background-repeat: no-repeat;
+    background: cover;
+    
+}
+
+#logo-link{
+    color: white
+}
+.form-group{
+    /* max-width: 500px; */
+    /* display: inline; */
+    justify-content:center; 
+    /* background: red; */
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding: 50px 40px ;
+    border: 4px solid  #17a2b8;
+    border: 1px solid   gray;
+    border-radius: 8px;
+    align-items: center;
+    /* box-shadow: -1px 1px 60px 10px black; */
+    /* background: rgba(0,0,0,0.4); */
+    /* background-image: url('/images/girlcolor.jpg'); */
+}
+
+h3{
+text-align: center
+}
+.main-section{
+    display: flex;
+    justify-content: center;
+    padding-top:60px;
+}
+#username, #email, #password,#passwordconfirm{
+    width: 340px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+#username-error,#email-error,#password-error,#password-confirm-error{
+    color:rgb(109, 101, 101);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

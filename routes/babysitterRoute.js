@@ -9,4 +9,8 @@ router.get('/dashboard', accountController.verifyBabySitterRole, (req, res) =>
   babysitterController.dashboard(req, res)
 );
 
+router.get('/assignments', accountController.verifyBabySitterRole, (req, res) =>
+  babysitterController.viewAllAssignments(req, res)
+);
+
 module.exports = router;

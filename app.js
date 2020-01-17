@@ -61,6 +61,7 @@ app.use('/account', require('./routes/accountRoute'));
 app.use('/admin', require('./routes/adminRoute'));
 app.use('/babysitter', require('./routes/babysitterRoute'));
 app.use('/supervisor', require('./routes/supervisorRoute'));
+app.use('/parent', require('./routes/parentRoute'));
 
 const port = 5000;
 app.listen(port, () => {
